@@ -220,6 +220,7 @@ void uncaughtExceptionHandler(NSException*exception){
 
 
 -(void)showExit{
+    return;
     UIAlertView* alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"账号已在别处登录" delegate:self cancelButtonTitle:@"重新登录" otherButtonTitles:nil, nil];
     alertView.tag = 100;
     [alertView show];
